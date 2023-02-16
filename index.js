@@ -10,7 +10,7 @@ mongoose.connect(db,{ useNewUrlParser: true, useUnifiedTopology: true })
 .then(()=>console.log('connected to database')).catch((err)=>console.log(err));
 app.use(cors(
   {
-    origin:["http://localhost:3000"]
+    origin:["http://localhost:3000","https://scam-shop.vercel.app"]
 }
 ))
 app.use(express.json());
